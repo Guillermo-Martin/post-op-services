@@ -65,6 +65,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
 p, input, button {
   font-family: var(--text-font-family);
   font-weight: 400;
@@ -72,5 +84,7 @@ p, input, button {
 }
 
 p {
+  font-size: 1.25rem;
   margin-bottom: 0;
+  /* margin-bottom: 1rem; */
 }
