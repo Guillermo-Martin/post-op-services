@@ -1,0 +1,61 @@
+/* .container {
+  border: 3px solid red;
+  max-width: 1200px;
+} */
+
+/* section {
+  margin-bottom: 120px;
+} */
+
+/* .cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.bona-nova-regular {
+  font-family: "Bona Nova", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bona-nova-bold {
+  font-family: "Bona Nova", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bona-nova-regular-italic {
+  font-family: "Bona Nova", serif;
+  font-weight: 400;
+  font-style: italic;
+} */
+
+
+:root {
+  --header-font-family: "Cinzel Decorative", serif;
+  --text-font-family: "Bona Nova", serif;
+}
+
+.hero-section {
+  background-color: blue;
+}
+
+
+h1 {
+  font-family: var(--header-font-family);
+  font-weight: 700;
+  font-style: normal;
+}
