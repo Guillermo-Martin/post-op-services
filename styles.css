@@ -49,6 +49,9 @@
   --text-font-family: "Bona Nova", serif;
 }
 
+body {
+  position: relative;
+}
 
 .hero-section {
   /* background-color: blue; */
@@ -68,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 4rem;
+  /* line-height: 1.50; */
 }
 
 h2 {
@@ -78,13 +82,13 @@ h3 {
   font-size: 3rem;
 }
 
-p, input, button {
+p, a, input, button {
   font-family: var(--text-font-family);
   font-weight: 400;
   font-style: normal;
 }
 
-p {
+p, a {
   font-size: 1.25rem;
   margin-bottom: 0;
   /* margin-bottom: 1rem; */
@@ -92,6 +96,12 @@ p {
 
 
 /* ---------- Navbar ---------- */
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
 nav .container {
   padding: 2rem 0;
 }
@@ -110,3 +120,52 @@ nav button {
   border-radius: 40px;
   padding: 0.5rem 3rem;
 }
+
+
+/* ---------- Hero section ---------- */
+.hero-section {
+  /* background-color: pink; */
+  background-image: url("./assets/images/hero-image.jpg");
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.hero-section-inner-container {
+  width: 60%;
+}
+
+.hero-section h1 {
+  margin-bottom: 2rem;
+}
+
+.hero-section .subheader {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.hero-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.hero-section span {
+  font-weight: bold;
+}
+
+.learn-more {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.learn-more p {
+  font-weight: 700;
+}
+
+/* .hero-section .container {
+  max-width: 500px;
+  margin-left: 0;
+} */
