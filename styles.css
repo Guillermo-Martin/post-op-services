@@ -58,10 +58,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--header-font-family);
   font-weight: 700;
   font-style: normal;
+  margin-bottom: 0;
 }
 
 p, input, button {
   font-family: var(--text-font-family);
   font-weight: 400;
   font-style: normal;
+}
+
+p {
+  margin-bottom: 0;
 }
