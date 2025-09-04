@@ -50,12 +50,18 @@
 }
 
 .hero-section {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--header-font-family);
   font-weight: 700;
+  font-style: normal;
+}
+
+p, input, button {
+  font-family: var(--text-font-family);
+  font-weight: 400;
   font-style: normal;
 }
