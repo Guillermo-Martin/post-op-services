@@ -367,3 +367,15 @@ nav a:hover {
   /* height: 200px; */
   padding-bottom: 200px;
 }
+
+/* ---------- Footer ---------- */
+footer {
+  /* background-color: red; */
+  border-top: 1px solid #000;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+footer .contact-info {
+  gap: 30px;
+}
