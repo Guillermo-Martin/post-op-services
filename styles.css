@@ -124,11 +124,12 @@ nav button {
 
 /* ---------- Hero section ---------- */
 .hero-section {
-  /* background-color: pink; */
-  background-image: url("./assets/images/hero-image.jpg");
-  background-size: cover;
+  /* background image fade effect:  https://www.w3schools.com/css/css3_gradients.asp#:~:text=Using%20Transparency,full%20color%20(no%20transparency). */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, white 99%), url("./assets/images/hero-image.jpg");
   height: 100%;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-section-inner-container {
@@ -164,8 +165,3 @@ nav button {
 .learn-more p {
   font-weight: 700;
 }
-
-/* .hero-section .container {
-  max-width: 500px;
-  margin-left: 0;
-} */
