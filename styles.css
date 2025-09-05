@@ -192,3 +192,14 @@ nav a:hover {
   font-weight: bold;
   text-align: center;
 }
+
+/* ---------- Section spacing ---------- */
+.choose-us-section, .our-services-section, .contact-us-section {
+  margin-top: 6.25rem;
+}
+
+/* ---------- Contact us section ---------- */
+.contact-us-section {
+  margin-bottom: 6.25rem;
+}
+
