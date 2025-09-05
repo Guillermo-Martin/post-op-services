@@ -175,9 +175,20 @@ nav a {
   transform: translateX(-50%);
 }
 
-.learn-more a {
+.learn-more {
   color: #000;
   font-weight: 700;
   font-style: normal;
   text-decoration: none;
+}
+
+.learn-more-text {
+  position: relative;
+  top: 1rem;
+}
+
+.down-chevron {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
