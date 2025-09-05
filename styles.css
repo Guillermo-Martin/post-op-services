@@ -62,8 +62,10 @@ body {
 }
 
 .container {
-  max-width: 1488px;
-  padding: 0;
+  /* max-width: 1488px; */
+  max-width: unset;
+  width: 100%;
+  padding: 0 7.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -107,7 +109,9 @@ nav {
 }
 
 nav .container {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
+  /* margin: 0; */
+  padding: 2rem 7.5rem;
 }
 
 .business-logo {
