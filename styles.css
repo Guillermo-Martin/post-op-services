@@ -224,8 +224,32 @@ nav a:hover {
   margin-bottom: 3rem;
 }
 
+
+/* ---------- Our services section ---------- */
+.our-services-section h2 {
+  text-align: center;
+}
+
+.our-services-section .text-container {
+  width: 50%;
+}
+
+.subsection .image-container {
+  width: 50%;
+}
+
+.subsection img {
+  width: 100%;
+}
+
+.subsection:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+
 /* ---------- Contact us section ---------- */
 .contact-us-section {
   margin-bottom: 6.25rem;
 }
+
 
