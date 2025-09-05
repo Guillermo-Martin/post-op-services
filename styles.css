@@ -89,13 +89,13 @@ h3 {
   font-size: 3rem;
 }
 
-p, a, input, button {
+p, a, input, button, li {
   font-family: var(--text-font-family);
   font-weight: 400;
   font-style: normal;
 }
 
-p, a {
+p, a, li {
   font-size: 1.25rem;
   margin-bottom: 0;
   /* margin-bottom: 1rem; */
@@ -274,4 +274,96 @@ nav a:hover {
   margin-bottom: 6.25rem;
 }
 
+/* .contact-us-inner-container {
+  border: 3px solid red;
+} */
 
+.contact-us-section h2 {
+  /* border: 3px solid red; */
+  /* padding-right: 30px; */
+  width: 40%;
+  min-width: 390px;
+}
+
+.contact-us-section hr {
+  /* width: 50%; */
+  /* width: 100%; */
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  
+}
+
+/* .contact-us-section hr {
+  position: relative;
+  bottom: 56px;
+} */
+
+.contact-us-section .header-container {
+  gap: 30px;
+  /* border: 3px solid red; */
+  margin-bottom: 2rem;
+}
+
+.contact-us-inner-container .text-container {
+  width: 35%;
+}
+
+
+.contact-us-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-us-section span {
+  font-weight: bold;
+}
+
+.contact-us-section .text-container p {
+  /* border: 3px solid red; */
+  margin-bottom: 1.25rem;
+}
+
+.contact-us-inner-container form {
+  width: 55%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+}
+
+
+.contact-us-inner-container form input {
+  padding: 12px;
+  border-radius: 1rem;
+  border: 1px solid #000;
+}
+
+.contact-us-inner-container [id="referral"], .contact-us-inner-container [id="form-message"] {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.contact-us-section button {
+  background-color: #000;
+  font-size: 1rem;
+  border: 0px;
+  color: #fff;
+  border-radius: 40px;
+  padding: 0.6rem 3rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  outline: 1px solid black;
+  max-width: 240px;
+  width: fit-content;
+}
+
+.contact-us-section button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-us-inner-container [id="form-message"] {
+  /* border: 3px solid red; */
+  /* height: 200px; */
+  padding-bottom: 200px;
+}

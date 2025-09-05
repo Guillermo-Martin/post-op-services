@@ -36,7 +36,7 @@
         <h1>Personalized, expert care for the post procedural patient.</h1>
         <p class="subheader">Subheader Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <ul>
-          <li><p><span>Phone:</span>  (123) 456-7890</p></li>
+          <li><span>Phone:</span>  (123) 456-7890</li>
           <li><a><span>Email:</span>  email@business.com</a></li>
         </ul>
       </div>
@@ -146,25 +146,36 @@
   <!-- ---------- Contact us section ---------- -->
   <section id="contact-us" class="contact-us-section">
     <div class="container">
-      <h2>Contact us</h2>
-
-      <!-- ----- Text ----- -->
-      <div class="text-container">
-        <p>Have questions about your recovery?  Fill out the form or contact us today to schedule a free consultation and learn how our team can support your healing journey.</p>
-        <p>Phone</p>
-        <p>Email</p>
+      <div class="header-container d-flex justify-content-start align-items-center">
+        <h2>Contact us</h2>
+        <hr class="border border-black border-2 opacity-100">
       </div>
+      
 
-      <!-- ----- Form ----- -->
-      <form>
-        <input type="text" id="first-name" name="first-name" placeholder="First name">
-        <input type="text" id="last-name" name="last-name" placeholder="Last name">
-        <input type="email" id="email" name="email" placeholder="Email">
-        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        <input type="text" id="referral" name="referral" placeholder="Last name">
-        <input type="text" id="form-message" name="form-message" placeholder="Tell us what you're looking for.">
-        <button type="submit">Send message</button>
-      </form>
+      <div class="contact-us-inner-container d-flex justify-content-between align-items-start">
+        <!-- ----- Text ----- -->
+        <div class="text-container">
+          <p>Have questions about your recovery?  Fill out the form or contact us today to schedule a free consultation and learn how our team can support your healing journey.</p>
+          <ul>
+            <li><span>Phone:</span>  (123) 456-7890</li>
+            <li><a><span>Email:</span>  email@business.com</a></li>
+          </ul>
+          
+          
+        </div>
+
+        <!-- ----- Form ----- -->
+        <form>
+          <input type="text" id="first-name" name="first-name" placeholder="First name">
+          <input type="text" id="last-name" name="last-name" placeholder="Last name">
+          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <input type="text" id="referral" name="referral" placeholder="Who referred you to us?">
+          <input type="text" id="form-message" name="form-message" placeholder="Tell us what you're looking for.">
+          <button type="submit">Send message</button>
+        </form>
+      </div>
+      
     </div>
   </section>
 
