@@ -139,7 +139,8 @@ nav a {
 .hero-section {
   /* background image fade effect:  https://www.w3schools.com/css/css3_gradients.asp#:~:text=Using%20Transparency,full%20color%20(no%20transparency). */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, white 99%), url("./assets/images/hero-image.jpg");
-  height: 100%;
+  padding-top: 136px;
+  min-height: 100vh;
   position: relative;
   background-size: cover;
   background-position: center;
