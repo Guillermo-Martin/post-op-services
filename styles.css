@@ -89,7 +89,7 @@ h3 {
   font-size: 3rem;
 }
 
-p, a, input, button, li {
+p, a, input, button, li, figcaption {
   font-family: var(--text-font-family);
   font-weight: 400;
   font-style: normal;
@@ -254,11 +254,19 @@ nav a:hover {
 
 .subsection .image-container {
   width: 50%;
+  margin-bottom: 0;
 }
+
 
 .subsection img {
   width: 100%;
   box-shadow: 2px 2px 6px #D5D5D5;
+  margin-bottom: 0.5rem;
+}
+
+.subsection figcaption {
+  font-size: 12px;
+  color: #D5D5D5;
 }
 
 .subsection:nth-child(even) {
@@ -378,4 +386,9 @@ footer {
 
 footer .contact-info {
   gap: 30px;
+}
+
+footer span {
+  font-size: 12px;
+  color: #D5D5D5;
 }
