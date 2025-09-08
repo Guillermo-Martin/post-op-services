@@ -37,7 +37,7 @@ h3 {
   font-size: 3rem;
 }
 
-p, a, input, button, li, figcaption {
+p, a, input, button, li, figcaption, textarea {
   font-family: var(--text-font-family);
   font-style: normal;
   font-weight: 400;
@@ -271,7 +271,7 @@ nav a:hover {
   width: 55%;
 }
 
-.contact-us-inner-container form input {
+.contact-us-inner-container form input, .contact-us-inner-container textarea {
   border: 1px solid #000;
   border-radius: 1rem;
   padding: 12px;
@@ -299,10 +299,6 @@ nav a:hover {
 .contact-us-section button:hover {
   background-color: #fff;
   color: #000;
-}
-
-.contact-us-inner-container [id="form-message"] {
-  padding-bottom: 200px;
 }
 
 /* --------------------------------------------------------------------
