@@ -1,7 +1,21 @@
 console.log("connected to contact.js!");
 
 const contactForm = document.getElementById("contact-us-form");
-const formContainer = document.querySelector(".form-container");
+
+const giveMessageFeedback = (str) => {
+  // target the form container
+  const formContainer = document.querySelector(".form-container");
+
+  // create a "p" tag, give it some classes for styling, give it a success message, and append the "p" tag
+  // to the "formContainer" element
+  const submitMessage = document.createElement("p");
+  submitMessage.classList.add("submit-message", "active")
+  submitMessage.textContent = str;
+  formContainer.appendChild(submitMessage);
+}
+
+
+
 // const submitButton = document.getElementById("submit-button");
 
 // submitButton.addEventListener("click", function(){
@@ -10,16 +24,11 @@ const formContainer = document.querySelector(".form-container");
 
 //   // hide the form
 //   // const contactForm = document.getElementById("contact-us-form");
-//   // contactForm.classList.add("hide");
+//   contactForm.classList.add("hide");
 
-//   // in the div, add a message that says the message was sent.
-//   // get the form container
-//   const formContainer = document.querySelector(".form-container");
-//   const submitMessage = document.createElement("p");
-//   submitMessage.classList.add("submit-message", "active")
-//   submitMessage.textContent = "Thank you!  Your message has been sent.  A member our team will contact you soon.";
-//   formContainer.appendChild(submitMessage);
-// })
+//   giveMessageFeedback("Thank you!  Your message has been sent.  A member our team will contact you soon.");
+// });
+
 
 
 (function() {
@@ -54,15 +63,13 @@ window.onload = function() {
             // hide the contact form
             contactForm.classList.add("hide");
 
-            // create a "p" tag, give it some classes for styling, give it a success message, and append the "p" tag
-            // to the "formContainer" element
-            const submitMessage = document.createElement("p");
-            submitMessage.classList.add("submit-message", "active")
-            submitMessage.textContent = "Thank you!  Your message has been sent.  A member our team will contact you soon.";
-            formContainer.appendChild(submitMessage);
+            // give success message feedback
+            giveMessageFeedback("Thank you!  Your message has been sent.  A member our team will contact you soon.");
         }, (error) => {
             console.log('FAILED...', error);
-            // alert("something went wrong.  try again later.")
+
+            const errorMessage = document.querySelector(".error-message");
+            errorMessage.classList.remove("hide");
         });
   });
 };

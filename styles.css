@@ -286,6 +286,17 @@ nav a:hover {
   transform: translate(-50%, -50%);
 }
 
+
+/* error message */
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.error-message.hide {
+  opacity: 0;
+}
+
 .contact-us-inner-container form {
   display: grid;
   grid-gap: 24px;
@@ -321,6 +332,10 @@ nav a:hover {
 .contact-us-section button:hover {
   background-color: #fff;
   color: #000;
+}
+
+.contact-us-section button:focus {
+  outline: 1px solid #000;
 }
 
 /* --------------------------------------------------------------------
