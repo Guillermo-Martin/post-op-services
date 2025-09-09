@@ -372,3 +372,41 @@ footer span, footer .attribution {
 footer a {
   color: #000;
 }
+
+/* Media queries */
+@media screen and (max-width: 1400px) {
+  /* navbar */
+  nav .container {
+    padding: 2rem 4.5rem;
+  }
+
+  /* hero */
+  .hero-section .container {
+    padding: 0rem 4.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* navbar */
+  nav .container {
+    padding: 2rem 3.75rem;
+  }
+
+  /* hero */
+  .hero-section .container {
+    padding: 0rem 3.75rem;
+  }
+
+  .hero-section-inner-container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    width: 80%;
+  }
+
+  .learn-more {
+    position: static;
+  }
+}
