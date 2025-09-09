@@ -410,3 +410,58 @@ footer a {
     position: static;
   }
 }
+
+@media screen and (max-width: 767px) {
+  /* navbar */
+  nav .container {
+    padding: 2rem 1.25rem;
+  }
+
+  /* hero */
+  .hero-section .container {
+    padding: 0rem 1.25rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    width: 80%;
+  }
+
+  .hero-section .subheader {
+    font-size: 1.5rem;
+  }
+
+  .learn-more {
+    position: relative;
+    top: 6rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* navbar */
+  nav .container {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .business-logo {
+    font-size: 2.5rem;
+  }
+
+  /* hero */
+  .hero-section .container {
+    padding: 0rem 1.25rem;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  .hero-section .subheader {
+    font-size: 1.5rem;
+  }
+
+  .learn-more {
+    position: relative;
+    top: 4rem;
+  }
+}
