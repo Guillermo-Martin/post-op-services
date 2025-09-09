@@ -264,11 +264,33 @@ nav a:hover {
   margin-bottom: 1.25rem;
 }
 
+/* Form submission message */
+.form-container {
+  position: relative;
+  width: 55%;
+}
+
+/* hide form when a user submits a message so the success message can be displayed */
+#contact-us-form.hide {
+  /* display: none; */
+  opacity: 0;
+}
+
+/* show form submit message */
+.submit-message.active {
+  font-size: 1rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
 .contact-us-inner-container form {
   display: grid;
   grid-gap: 24px;
   grid-template-columns: 1fr 1fr;
-  width: 55%;
+  width: 100%;
 }
 
 .contact-us-inner-container form input, .contact-us-inner-container textarea {
