@@ -381,8 +381,13 @@ footer a {
     padding: 2rem 4.5rem;
   }
 
-  /* hero */
-  .hero-section .container {
+  /* all section containers */
+  .hero-section .container, .choose-us-section .container, .our-services-section .container, .contact-us-section .container {
+    padding: 0rem 4.5rem;
+  }
+
+  /* footer */
+  footer .container {
     padding: 0rem 4.5rem;
   }
 }
@@ -393,8 +398,13 @@ footer a {
     padding: 2rem 3.75rem;
   }
 
-  /* hero */
-  .hero-section .container {
+  /* all section containers */
+  .hero-section .container, .choose-us-section .container, .our-services-section .container, .contact-us-section .container {
+    padding: 0rem 3.75rem;
+  }
+
+  /* footer */
+  footer .container {
     padding: 0rem 3.75rem;
   }
 
@@ -418,8 +428,13 @@ footer a {
     padding: 2rem 1.25rem;
   }
 
-  /* hero */
-  .hero-section .container {
+  /* all section containers */
+  .hero-section .container, .choose-us-section .container, .our-services-section .container, .contact-us-section .container {
+    padding: 0rem 1.25rem;
+  }
+
+  /* footer */
+  footer .container {
     padding: 0rem 1.25rem;
   }
 
@@ -449,9 +464,9 @@ footer a {
   }
 
   /* hero */
-  .hero-section .container {
+  /* .hero-section .container {
     padding: 0rem 1.25rem;
-  }
+  } */
 
   h1 {
     width: 100%;
