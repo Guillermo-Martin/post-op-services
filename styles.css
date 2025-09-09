@@ -58,6 +58,7 @@ nav {
 }
 
 nav .container {
+  align-items: center;
   padding: 2rem 7.5rem;
 }
 
@@ -463,5 +464,19 @@ footer a {
   .learn-more {
     position: relative;
     top: 4rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* navbar */
+  nav .container {
+    align-items: start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* hero section */
+  h1 {
+    font-size: 2rem;
   }
 }
