@@ -122,6 +122,10 @@ nav a:hover {
   font-weight: bold;
 }
 
+.hero-section a {
+  color: #000;
+}
+
 .learn-more {
   color: #000;
   font-style: normal;
@@ -265,6 +269,10 @@ nav a:hover {
   font-weight: bold;
 }
 
+.contact-us-section a {
+  color: #000;
+}
+
 .contact-us-section .text-container p {
   margin-bottom: 1.25rem;
 }
@@ -359,4 +367,8 @@ footer .contact-info {
 footer span, footer .attribution {
   color: #d5d5d5;
   font-size: 12px;
+}
+
+footer a {
+  color: #000;
 }
