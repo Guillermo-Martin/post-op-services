@@ -166,6 +166,10 @@ nav a:hover {
   width: fit-content;
 }
 
+.choose-us-section hr {
+  display: none;
+}
+
 .choose-us-section .text-container {
   border: 4px solid #000;
   padding-bottom: 5.25rem;
@@ -174,7 +178,7 @@ nav a:hover {
   padding-top: 1.5rem;
 }
 
-.choose-us-section .text-container p:nth-child(2) {
+.choose-us-section .text-container p:nth-child(3) {
   margin-bottom: 3rem;
 }
 
@@ -386,6 +390,12 @@ footer a {
     padding: 0rem 4.5rem;
   }
 
+  /* why choose us */
+  .choose-us-section .text-container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
   /* footer */
   footer .container {
     padding: 0rem 4.5rem;
@@ -401,6 +411,11 @@ footer a {
   /* all section containers */
   .hero-section .container, .choose-us-section .container, .our-services-section .container, .contact-us-section .container {
     padding: 0rem 3.75rem;
+  }
+
+  /* all h2 */
+  h2 {
+    font-size: 3rem;
   }
 
   /* footer */
@@ -420,6 +435,16 @@ footer a {
   .learn-more {
     position: static;
   }
+
+  /* why choose us */
+  .choose-us-section h2 {
+    min-width: 532px;
+  }
+
+  .choose-us-section .text-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -431,6 +456,11 @@ footer a {
   /* all section containers */
   .hero-section .container, .choose-us-section .container, .our-services-section .container, .contact-us-section .container {
     padding: 0rem 1.25rem;
+  }
+
+  /* all h2 */
+  h2 {
+    font-size: 2.5rem;
   }
 
   /* footer */
@@ -451,6 +481,24 @@ footer a {
     position: relative;
     top: 6rem;
   }
+
+  /* why choose us */
+  .choose-us-section h2 {
+    bottom: 3rem;
+    min-width: unset;
+    padding: 0 1.5rem;
+  }
+
+  .choose-us-section .text-container {
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+
+  .choose-us-section .text-container p:nth-child(2) {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -462,11 +510,6 @@ footer a {
   .business-logo {
     font-size: 2.5rem;
   }
-
-  /* hero */
-  /* .hero-section .container {
-    padding: 0rem 1.25rem;
-  } */
 
   h1 {
     width: 100%;
@@ -480,6 +523,30 @@ footer a {
     position: relative;
     top: 4rem;
   }
+
+  /* why choose us */
+  .choose-us-section h2 {
+    padding: 0;
+    position: static;
+  }
+
+  .choose-us-section hr {
+    background-color: #000;
+    border: none;
+    display: block;
+    height: 4px;
+    margin-bottom: 2rem;
+    opacity: 1;
+  }
+
+  .choose-us-section .text-container {
+    border: none;
+    padding: 0;
+  }
+
+  .choose-us-section .text-container p:nth-child(3) {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -490,8 +557,15 @@ footer a {
     gap: 0.75rem;
   }
 
-  /* hero section */
   h1 {
     font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
