@@ -379,6 +379,18 @@ footer a {
 }
 
 /* Media queries */
+@media screen and (max-width: 1589px) {
+  .learn-more {
+    top: 3rem;
+  }
+}
+
+@media screen and (max-width: 1476px) {
+  .learn-more {
+    top: 0;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   /* navbar */
   nav .container {
