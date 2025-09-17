@@ -524,6 +524,11 @@ footer a {
     width: 100%;
   }
 
+  .submit-message.active {
+    position: static;
+    transform: unset;
+  }
+
   /* ---------- footer ---------- */
   footer .container {
     padding: 0rem 3.75rem;
