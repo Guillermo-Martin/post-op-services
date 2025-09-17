@@ -212,8 +212,8 @@ nav a:hover {
 }
 
 .subsection .image-container {
-  width: 50%;
   margin-bottom: 0;
+  width: 50%;
 }
 
 .subsection img {
@@ -224,7 +224,7 @@ nav a:hover {
 
 .subsection figcaption, .subsection a {
   color: #d5d5d5;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .subsection figcaption.caption-right {
@@ -236,7 +236,7 @@ nav a:hover {
 }
 
 .subsection hr {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   margin-top: 0;
 }
 
@@ -293,7 +293,6 @@ nav a:hover {
 
 /* hide form when a user submits a message so the success message can be displayed */
 #contact-us-form.hide {
-  /* display: none; */
   opacity: 0;
 }
 
@@ -307,11 +306,10 @@ nav a:hover {
   transform: translate(-50%, -50%);
 }
 
-
 /* error message */
 .error-message {
   color: red;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .error-message.hide {
@@ -328,7 +326,7 @@ nav a:hover {
 .contact-us-inner-container form input, .contact-us-inner-container textarea {
   border: 1px solid #000;
   border-radius: 1rem;
-  padding: 12px;
+  padding: 0.75rem;
 }
 
 .contact-us-inner-container [id="referral"], .contact-us-inner-container [id="form-message"] {
@@ -379,14 +377,16 @@ footer .contact-info {
 
 footer span, footer .attribution {
   color: #d5d5d5;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 footer a {
   color: #000;
 }
 
-/* Media queries */
+/* --------------------------------------------------------------------
+                            Media queries
+-------------------------------------------------------------------- */
 @media screen and (max-width: 1589px) {
   .learn-more {
     top: 3rem;
@@ -400,28 +400,28 @@ footer a {
 }
 
 @media screen and (max-width: 1400px) {
-  /* navbar */
+  /* ---------- navbar ---------- */
   nav .container {
     padding: 2rem 4.5rem;
   }
 
-  /* all section containers */
+  /* ---------- all section containers ---------- */
   .hero-section .container, .choose-us-section .container, .our-services-section .container, .contact-us-section .container {
     padding: 0rem 4.5rem;
   }
 
-  /* why choose us */
+  /* ---------- why choose us ---------- */
   .choose-us-section .text-container {
     padding-left: 10rem;
     padding-right: 10rem;
   }
 
-  /* our services section */
+  /* ---------- our services section ---------- */
   .our-services-section .subsection {
     gap: 5rem;
   }
 
-  /* footer */
+  /* ---------- footer ---------- */
   footer .container {
     padding: 0rem 4.5rem;
   }
@@ -429,7 +429,6 @@ footer a {
 
 @media screen and (max-width: 1200px) {
   .our-services-section .subsection {
-    /* gap: 1rem; */
     align-items: start;
   }
 
@@ -437,38 +436,34 @@ footer a {
     font-size: 40px;
   }
 
-  /* form */
+  /* ---------- form ---------- */
   .contact-us-inner-container form {
     grid-gap: 1rem;
   }
 
-  /* footer */
+  /* ---------- footer ---------- */
   footer p, footer a {
     font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 992px) {
-  /* navbar */
+  /* ---------- navbar ---------- */
   nav .container {
     padding: 2rem 3.75rem;
   }
 
-  /* all section containers */
+  /* ---------- all section containers ---------- */
   .hero-section .container, .choose-us-section .container, .our-services-section .container, .contact-us-section .container {
     padding: 0rem 3.75rem;
   }
 
-  /* all h2 */
+  /* ---------- all h2 ---------- */
   h2 {
     font-size: 3rem;
   }
 
-  /* footer */
-  footer .container {
-    padding: 0rem 3.75rem;
-  }
-
+  /* ---------- hero ---------- */
   .hero-section-inner-container {
     width: 100%;
   }
@@ -482,7 +477,7 @@ footer a {
     position: static;
   }
 
-  /* why choose us */
+  /* ---------- why choose us ---------- */
   .choose-us-section h2 {
     min-width: 532px;
   }
@@ -492,7 +487,7 @@ footer a {
     padding-right: 5rem;
   }
 
-  /* our services */
+  /* ---------- our services ---------- */
   .our-services-section .subsection {
     flex-direction: column-reverse;
     gap: 2rem;
@@ -510,7 +505,7 @@ footer a {
     text-align: left;
   }
 
-  /* form */
+  /* ---------- form ---------- */
   .contact-us-section .header-container {
     gap: 0;
   }
@@ -523,6 +518,11 @@ footer a {
   .contact-us-inner-container .text-container, .contact-us-inner-container, .form-container {
     width: 100%;
   }
+
+  /* ---------- footer ---------- */
+  footer .container {
+    padding: 0rem 3.75rem;
+  }
 }
 
 @media screen and (max-width: 940px) {
@@ -533,17 +533,22 @@ footer a {
 }
 
 @media screen and (max-width: 767px) {
-  /* navbar */
+  /* ---------- navbar ---------- */
   nav .container {
     padding: 2rem 1.25rem;
   }
 
-  /* all section containers */
+  /* ---------- all section containers ---------- */
   .hero-section .container, .choose-us-section .container, .our-services-section .container, .contact-us-section .container {
     padding: 0rem 1.25rem;
   }
 
-  /* all h2 */
+  /* ---------- all headers ---------- */
+  h1 {
+    font-size: 3rem;
+    width: 80%;
+  }
+
   h2 {
     font-size: 2.5rem;
   }
@@ -552,16 +557,7 @@ footer a {
     font-size: 2rem;
   }
 
-  /* footer */
-  footer .container {
-    padding: 0rem 1.25rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    width: 80%;
-  }
-
+  /* ---------- hero ---------- */
   .hero-section .subheader {
     font-size: 1.5rem;
   }
@@ -571,7 +567,7 @@ footer a {
     top: 6rem;
   }
 
-  /* why choose us */
+  /* ---------- why choose us ---------- */
   .choose-us-section h2 {
     bottom: 3rem;
     min-width: unset;
@@ -584,20 +580,23 @@ footer a {
     padding-right: 4rem;
   }
 
-
   .choose-us-section .text-container p:nth-child(2) {
     margin-bottom: 2.5rem;
   }
 
-  /* form */
+  /* ---------- form ---------- */
   .contact-us-section h2 {
-    /* min-width: unset; */
     min-width: 312px;
+  }
+
+  /* ---------- footer ---------- */
+  footer .container {
+    padding: 0rem 1.25rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  /* navbar */
+  /* ---------- navbar ---------- */
   nav .container {
     padding: 1.5rem 1.25rem;
   }
@@ -610,6 +609,7 @@ footer a {
     width: 100%;
   }
 
+  /* ---------- hero ---------- */
   .hero-section .subheader {
     font-size: 1.5rem;
   }
@@ -619,7 +619,7 @@ footer a {
     top: 4rem;
   }
 
-  /* why choose us */
+  /* ---------- why choose us ---------- */
   .choose-us-section h2 {
     padding: 0;
     position: static;
@@ -643,7 +643,7 @@ footer a {
     margin-bottom: 2rem;
   }
 
-  /* form */
+  /* ---------- form ---------- */
   .contact-us-section .header-container {
     align-items: start;
     flex-direction: column;
@@ -664,10 +664,10 @@ footer a {
   }
 
   .contact-us-inner-container form {
-    display: flex;
     align-items: start;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .contact-us-inner-container form input, .contact-us-inner-container [id="form-message"] {
@@ -676,7 +676,7 @@ footer a {
 }
 
 @media screen and (max-width: 440px) {
-  /* navbar */
+  /* ---------- navbar ---------- */
   nav .container {
     align-items: start;
     flex-direction: column;
@@ -699,7 +699,7 @@ footer a {
     font-size: 1rem;
   }
 
-  /* our services */
+  /* ---------- our services ---------- */
   .our-services-section .subsection {
     gap: 1rem;
     margin-bottom: 5rem;
@@ -709,12 +709,12 @@ footer a {
     margin-bottom: 1rem;
   }
 
-  /* form */
+  /* ---------- form ---------- */
   .contact-us-section li, .contact-us-section a, .contact-us-section input {
     font-size: 1rem;
   }
 
-  /* footer */
+  /* ---------- footer ---------- */
   footer .contact-info {
     align-items: start;
     flex-direction: column;
