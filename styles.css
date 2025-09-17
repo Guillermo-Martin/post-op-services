@@ -87,7 +87,8 @@ nav a:hover {
 }
 
 nav a:active {
-  transform: scale(0.98);
+  background-color: #fff;
+  color: #000;
 }
 
 /* --------------------------------------------------------------------
