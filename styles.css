@@ -368,6 +368,11 @@ footer {
   padding-top: 1.5rem;
 }
 
+footer .container {
+  align-items: center;
+  justify-content: space-between;
+}
+
 footer .contact-info {
   gap: 30px;
 }
@@ -435,6 +440,11 @@ footer a {
   /* form */
   .contact-us-inner-container form {
     grid-gap: 1rem;
+  }
+
+  /* footer */
+  footer p, footer a {
+    font-size: 1rem;
   }
 }
 
@@ -513,8 +523,13 @@ footer a {
   .contact-us-inner-container .text-container, .contact-us-inner-container, .form-container {
     width: 100%;
   }
+}
 
-
+@media screen and (max-width: 940px) {
+  footer .container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -697,5 +712,14 @@ footer a {
   /* form */
   .contact-us-section li, .contact-us-section a, .contact-us-section input {
     font-size: 1rem;
+  }
+
+  /* footer */
+  footer .contact-info {
+    align-items: start;
+    flex-direction: column;
+    gap: 0;
+    justify-content: start;
+    width: 100%;
   }
 }
