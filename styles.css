@@ -81,15 +81,13 @@ nav a {
   transition: all 0.2s;
 }
 
-nav a:hover {
-  background-color: #fff;
-  color: #000;
+@media (hover:hover) and (pointer:fine) {
+  nav a:hover {
+    background-color: #fff;
+    color: #000;
+  }
 }
 
-nav a:active {
-  background-color: #fff;
-  color: #000;
-}
 
 /* --------------------------------------------------------------------
                                   Hero section
