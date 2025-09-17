@@ -81,6 +81,7 @@ nav a {
   transition: all 0.2s;
 }
 
+/* "sticky" hover effects:  https://www.geeksforgeeks.org/javascript/how-to-prevent-sticky-hover-effects-for-buttons-on-touch-devices/ */
 @media (hover:hover) and (pointer:fine) {
   nav a:hover {
     background-color: #fff;
