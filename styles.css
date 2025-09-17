@@ -297,7 +297,8 @@ nav a {
 
 /* hide form when a user submits a message so the success message can be displayed */
 #contact-us-form.hide {
-  opacity: 0;
+  /* opacity: 0; */
+  display: none;
 }
 
 /* show form submit message */
@@ -307,7 +308,7 @@ nav a {
   position: absolute;
   text-align: center;
   top: 30%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
 }
 
 /* error message */
