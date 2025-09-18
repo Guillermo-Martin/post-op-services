@@ -200,12 +200,12 @@
           <div class="form-container">
             <form id="contact-us-form">
               <input type="hidden" id="sent-time" name="time">
-              <input type="text" id="first-name" name="firstName" placeholder="First name" required>
-              <input type="text" id="last-name" name="lastName" placeholder="Last name" required>
-              <input type="email" id="email" name="email" placeholder="Email" required>
-              <input type="tel" id="phone" name="phone" placeholder="123-456-7890" maxlength="12" required>
-              <input type="text" id="referral" name="referral" placeholder="Who referred you to us?" required>
-              <textarea id="form-message" name="formMessage" rows="8" cols="40" placeholder="Tell us what you're looking for." required></textarea>
+              <input type="text" id="first-name" name="firstName" placeholder="First name" aria-label="First name" required>
+              <input type="text" id="last-name" name="lastName" placeholder="Last name" aria-label="Last name" required>
+              <input type="email" id="email" name="email" placeholder="Email" aria-label="Email address" required>
+              <input type="tel" id="phone" name="phone" placeholder="123-456-7890" maxlength="12" aria-label="Phone number" required>
+              <input type="text" id="referral" name="referral" placeholder="Who referred you to us?" aria-label="Who referred you to us?" required>
+              <textarea id="form-message" name="formMessage" rows="8" cols="40" placeholder="Tell us what you're looking for." aria-label="Tell us what you're looking for." required></textarea>
               <button type="submit" id="submit-button">Send message</button>
             </form>
             <p class="error-message hide">Something went wrong.  Please try again.</p>
