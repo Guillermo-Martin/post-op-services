@@ -63,9 +63,9 @@ nav .container {
 }
 
 .cherry-blossom {
-  width: 60px;
   height: 60px;
   margin-right: 2rem;
+  width: 60px;
 }
 
 .cherry-blossom:hover {
@@ -716,8 +716,13 @@ footer a {
   /* ---------- navbar ---------- */
   nav .container {
     align-items: start;
-    flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .cherry-blossom {
+    height: 40px;
+    margin-right: 0.5rem;
+    width: 40px;
   }
 
   h1 {
