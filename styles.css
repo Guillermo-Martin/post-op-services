@@ -62,14 +62,19 @@ nav .container {
   padding: 2rem 7.5rem;
 }
 
-.business-logo {
-  font-family: var(--header-font-family);
-  font-size: 3rem;
-  font-weight: 700;
-  padding-right: 2rem;
+.cherry-blossom {
+  width: 60px;
+  height: 60px;
+  margin-right: 2rem;
 }
 
-nav a {
+.cherry-blossom:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+
+nav a[href="#contact-us"] {
   background-color: #000;
   border: 0px;
   border-radius: 40px;
@@ -83,7 +88,7 @@ nav a {
 
 /* "sticky" hover effects:  https://www.geeksforgeeks.org/javascript/how-to-prevent-sticky-hover-effects-for-buttons-on-touch-devices/ */
 @media (hover:hover) and (pointer:fine) {
-  nav a:hover {
+  nav a[href="#contact-us"]:hover {
     background-color: #fff;
     color: #000;
   }
