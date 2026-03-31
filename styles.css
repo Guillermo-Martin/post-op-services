@@ -140,9 +140,11 @@ nav a[href="#contact-us"] {
   color: #000;
   font-style: normal;
   font-weight: 700;
+  margin: 0 auto;
   position: relative;
   text-decoration: none;
   top: 5rem;
+  width: fit-content;
 }
 
 .learn-more-text {
