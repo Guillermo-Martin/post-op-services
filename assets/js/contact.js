@@ -47,7 +47,7 @@ phoneInput.addEventListener("input", function(event){
 (function() {
     // https://dashboard.emailjs.com/admin/account
     emailjs.init({
-      publicKey: "jgcwgJAymXVkFay9x",
+      publicKey: "7Tt9BC3adNIPZZy5v",
     });
 })();
 
